@@ -1,0 +1,4 @@
+import netmiko 
+connection = netmiko.ConnnectHandler(ip='10.201.2.211', device_type='cisco_ios', username='gjdkpc', password='Kpc@2022')
+hostname = (connection.send_command('show run | include hostname'))
+print (hostname)

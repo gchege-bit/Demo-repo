@@ -1,0 +1,4 @@
+import os
+with open('multping.txt') as file:
+     dump = file.read()
+print(dump)
